@@ -9,7 +9,7 @@ router.post("/",customerService.createACustomer)
 router.get("/",customerService.getCustomers)
 
 
-//READ ONE SUPERHERO
+//READ ONE customer
 
 router.get("/:id",customerService.getACustomer)
 
