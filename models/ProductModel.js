@@ -5,26 +5,33 @@ const { Schema } = mongoose;
 
 const productSchema = new Schema({
 
-    name : {
+    productName : {
         type : String,
         required : true
     },
-    gender : {
-        type :String,
+    price : {
+        type :  Number,
         required : true
     },
-    powerLevel : 
+    description : 
     {
-        type: Number,
-        required:true
+        type: String,
     },
-    comicbookType : {
+    productCategory : {
         type:String,
         required:true
     },
-    realName : 
+    quantity : 
     {
         type: String
+    },
+    bestSeller :
+    {
+        type: Boolean,
+        required : true
+    },
+    photoURL: {
+        type: String,
     },
     dateCreated :{
         type : Date,
