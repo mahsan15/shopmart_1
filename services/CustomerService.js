@@ -1,5 +1,5 @@
 const customerModel = require("../models/CustomerModel.js");
-
+const bcrypt = require('bcryptjs');
 
 
 exports.createACustomer =(req,res)=>{
