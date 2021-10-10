@@ -1,5 +1,21 @@
 const customerModel = require("../models/CustomerModel.js");
+
+app.use(express.json());
+
+
+
 exports.createACustomer =(req,res)=>{
+
+    
+    
+    bcrypt.genSalt(10, (err, salt) => { 
+        bcrypt.hash(req.body.password, salt, (err, hash) => {
+
+            if (err)
+                reject('Error encrypting the password');
+                req.body.password = hash;
+        })
+    })
 
 
 

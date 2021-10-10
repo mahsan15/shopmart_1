@@ -1,30 +1,31 @@
 
 const mongoose = require("mongoose");
+const bcrypt = require('bcryptjs');
 
 const { Schema } = mongoose;
 
 const CustomerSchema = new Schema({
 
-    name : {
+    firstName : {
         type : String,
         required : true
     },
-    gender : {
+    lastName : {
         type :String,
         required : true
     },
-    powerLevel : 
+    email : 
     {
-        type: Number,
+        type: String,
         required:true
     },
-    comicbookType : {
+    password : {
         type:String,
         required:true
     },
-    realName : 
+    phoneNumbers : 
     {
-        type: String
+        type: Array
     },
     dateCreated :{
         type : Date,
