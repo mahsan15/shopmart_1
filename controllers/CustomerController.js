@@ -13,12 +13,12 @@ router.get("/",customerService.getCustomers)
 
 router.get("/:id",customerService.getACustomer)
 
-//Update
+//Update not allowed
 
 router.put("/:id",customerService.updateACustomer)
 
 
-//DELETE
+//DELETE not allowed
 router.delete("/:id",customerService.deleteACustomer)
 
 

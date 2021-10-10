@@ -5,11 +5,15 @@ const productService = require("../services/Productservice.js");
 //Create
 router.post("/",productService.createAProduct)
 
-//Read ALL 
+//Read ALL, filter bestSeller, cateogory 
 router.get("/",productService.getProducts)
 
 
-//READ ONE SUPERHERO
+//Get Categories
+router.get("/categories", productService.getCategories)
+
+
+//READ ONE product
 
 router.get("/:id",productService.getAProduct)
 

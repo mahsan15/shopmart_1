@@ -24,13 +24,36 @@ exports.createAProduct =(req,res)=>{
 
 exports.getProducts =(req,res)=>{
 
+    const result = req.query.bestSeller;
+    const category = req.query.category;
+
+    if(result){
+
+        productModel.find({bestSeller: result === "yes"? true : false})
+        .then(products=>{
+            res.json({
+                message : `${products.length} products(s)`,
+                data : products
+            })
+        })
+        }else if(category)
+        {
+            productModel.find({productCategory: category})
+            .then(products=>{
+                res.json({
+                    message : `${products.length} products(s) of ${category} category`,
+                    data : products
+                })
+            })
+
+        }
+        else{
     productModel.find()
     .then(products=>{
 
         res.json({
-            message : "A list of all the Products",
-            data : products,
-            totalProducts : products.length
+            message : `${products.length} total Product(s) in the database`,
+            data : products
         })
 
     })
@@ -39,9 +62,24 @@ exports.getProducts =(req,res)=>{
             message :err
         })
     })
-
+        }
 };
 
+exports.getCategories=(req,res)=>{
+
+res.json({
+    categories : [
+        "furniture",
+        "food",
+        "beauty",
+        "sport",
+        "office",
+        "bathroom"
+    ]
+})
+
+
+};
 
 exports.getAProduct=(req,res)=>{
 
