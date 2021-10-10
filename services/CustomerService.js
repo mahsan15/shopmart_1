@@ -1,7 +1,5 @@
 const customerModel = require("../models/CustomerModel.js");
 
-app.use(express.json());
-
 
 
 exports.createACustomer =(req,res)=>{
