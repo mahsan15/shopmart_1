@@ -6,8 +6,8 @@ WEB422
 */
 const express = require("express");
 const mongoose = require('mongoose');
-const customerController = require("./CustomerController.js");
-const productController = require("./ProductController.js");
+const customerController = require("./controllers/CustomerController.js");
+const productController = require("./controllers/ProductController.js");
 if(process.env.NODE_ENV!="production")
 {
     require('dotenv').config({ path: 'config/keys.env' });
