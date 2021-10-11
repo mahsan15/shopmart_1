@@ -1,4 +1,4 @@
-const customerModel = require("../CustomerModel.js");
+const customerModel = require("./CustomerModel.js");
 const bcrypt = require('bcryptjs');
 
 
