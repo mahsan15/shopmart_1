@@ -1,4 +1,4 @@
 https://github.com/mahsan19/shopmart_1
 https://web422-shopmart-1.herokuapp.com/
-app is not working I dont know why, followed the same
+git app is not working I dont know why, followed the same
 steps, works locally

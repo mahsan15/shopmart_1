@@ -25,7 +25,7 @@ app.use("/products",productController);
 app.listen(process.env.PORT,()=>{
     console.log(`RESTful API is up and running on PoRT ${process.env.PORT}`);
 
-    mongoose.connect(process.env.MONGODB_CONN_STRING)
+    mongoose.connect(process.env.MONGO_DB_CONNECTION_STRING)
     .then(()=>{
         console.log(`Connected to MongoDB`)
     })
