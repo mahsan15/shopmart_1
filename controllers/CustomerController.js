@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const customerService = require("../CustomerService.js");
+const customerService = require("../services/CustomerService.js");
 
 //Create
 router.post("/",customerService.createACustomer)
