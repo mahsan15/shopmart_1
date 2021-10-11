@@ -7,22 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mahsan19/shopmart_1.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mahsan19/shopmart_1/issues"
-  },
-  "homepage": "https://github.com/mahsan19/shopmart_1#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "mongoose": "^6.0.10",
-    "node": "^16.10.0"
   },
   "devDependencies": {
     "dotenv": "^10.0.0"
