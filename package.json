@@ -7,7 +7,7 @@
     "dev": "react-scripts start",
     "start": "serve -s build",
     "test": "react-scripts test --env=jsdom",
-"eject": "react-scripts eject",
+    "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "mongoose": "^6.0.10",
+    "node": "^16.10.0",
     "serve": "^12.0.1"
   },
   "devDependencies": {
